@@ -1,15 +1,22 @@
 export default function Contact() {
   return (
-    <section className="md:col-span-2 flex flex-col md:flex-row justify-between items-stretch border-b border-dashed border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-      <a href="mailto:oleh.brezvin.kb.2023@lpnu.ua" className="flex-1 text-center p-4 md:border-r border-dashed border-gray-300 dark:border-gray-600 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all font-medium flex items-center justify-center">
-        oleh.brezvin.kb.2023@lpnu.ua
-      </a>
-      <a href="tel:+380681356767" className="flex-1 text-center p-4 border-t md:border-t-0 md:border-r border-dashed border-gray-300 dark:border-gray-600 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all font-medium flex items-center justify-center">
-        068 135 67 67
-      </a>
-      <p className="flex-1 text-center p-4 border-t md:border-t-0 font-medium text-gray-700 dark:text-gray-300 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-all">
-        Lviv, UA
-      </p>
+    <section>
+      <h2 className="text-white text-sm font-bold uppercase tracking-widest mb-5 flex items-center gap-3">
+        <span className="w-8 h-[2px] bg-emerald-500"></span> Contact
+      </h2>
+      <ul className="flex flex-col gap-4 text-sm font-medium">
+        <li>
+          <a href="mailto:oleh.brezvin.kb.2023@lpnu.ua" className="hover:text-emerald-400 transition-colors">
+            oleh.brezvin.kb.2023@lpnu.ua
+          </a>
+        </li>
+        <li>
+          <a href="tel:+380681356767" className="hover:text-emerald-400 transition-colors">
+            +380 68 135 67 67
+          </a>
+        </li>
+        <li className="text-slate-400">Lviv, Ukraine</li>
+      </ul>
     </section>
   );
 }
